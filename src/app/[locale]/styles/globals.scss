@@ -1,0 +1,12 @@
+@import 'reset';
+@import 'mixins';
+@import 'variables';
+
+
+body {
+  margin: 0 auto;
+  padding: 0 20px;
+  @include Desktop {
+    width: 1200px;
+  }
+}

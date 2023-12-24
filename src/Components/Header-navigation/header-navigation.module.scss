@@ -3,15 +3,22 @@
   flex-direction: row;
   justify-content:space-around;
   align-items: center;
+  padding: 15px 0;
 }
 
 .main-navigation__li {
   list-style: none;
+  padding: 10px;
+  cursor: pointer;
 }
 
 .main-navigation__link {
   text-decoration: none;
-  color: red;
-  font-size: 1.5rem;
+  color: rgb(107, 78, 78);
+  font-size: 18px;
   font-weight: 700;
+
+  &:hover {
+    color: rgb(222, 156, 143);
+  }
 }

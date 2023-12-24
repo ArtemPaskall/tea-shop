@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.input-search {
+  width: 100%;
+  max-width: 600px;
+  height: 40px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+  font-size: 16px;
+}
+
+.profile {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.cart {
+  cursor: pointer;
+}
