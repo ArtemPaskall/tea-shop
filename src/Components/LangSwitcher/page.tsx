@@ -1,30 +1,16 @@
-// 'use client'
+'use client'
 
-import { useRouter } from 'next/navigation'
 import styles from './lang-switcher.module.scss'
-import { useGlobalContext } from '../../../lib/store'
-import { Locale } from '@/../i18n.config' 
-
+import { useChangeLocale } from '../../../locales/client'
 
 const LangSwitcher = () => {
-  const router = useRouter()
-  const {locale, setLocale} = useGlobalContext()
-
-  const switchLangHandler = (e: React.MouseEvent) => {
-    if (e.currentTarget.textContent) {
-      console.log(e.currentTarget.textContent.toLowerCase())
-      const newLocale = e.currentTarget.textContent.toLowerCase() as Locale
-      setLocale(newLocale)
-
-      router.push(`http://localhost:3000/${newLocale}/tea`);
-    }
-  }
+  const changeLocale = useChangeLocale()
 
   return (
     <div>
-      <span className={styles['span-UA']} onClick={switchLangHandler}>UK</span>
+      <span className={styles['span-UA']} onClick={() => changeLocale('uk')}>UK</span>
       | 
-      <span className={styles['span-RU']} onClick={switchLangHandler}>RU</span>
+      <span className={styles['span-RU']} onClick={() => changeLocale('ru')}>RU</span>
     </div>
   )
 }

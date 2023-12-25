@@ -4,10 +4,10 @@ import MainNavigation from "../Header-navigation/page"
 import HeaderTopPanel from "../Header-top-panel/page"
 import Image from 'next/image'
 import styles from './header.module.scss'
-import { useGlobalContext } from "../../../lib/store"
+import { useCurrentLocale } from "../../../locales/client"
 
 export default function Header() {
-  const { locale } = useGlobalContext() 
+  const currentLocale = useCurrentLocale()
  
   return (
     <header>
@@ -17,7 +17,7 @@ export default function Header() {
         <input 
           className={styles['input-search']}
           type="text" 
-          placeholder={locale === 'uk'?  'Знайди свій чай' : 'Найди свой чай'} 
+          placeholder={currentLocale === 'uk'?  'Знайди свій чай' : 'Найди свой чай'} 
         />
         <div>
           <Image src='/profile-icon.png' alt='Profile Image' width={18} height={18} className={styles.profile} />
