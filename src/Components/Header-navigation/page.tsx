@@ -1,6 +1,5 @@
 'use client'
 
-import { useEffect, useState } from 'react'
 import styles from './header-navigation.module.scss'
 import Link from 'next/link'
 import { useCurrentLocale } from '../../../locales/client'
@@ -30,7 +29,7 @@ export default function MainNavigation() {
         {categories.map((category: Category, i) => {
           return (
             <li key={i} className={styles['main-navigation__li']}>
-              <Link href={`/products/${i}`} className={styles['main-navigation__link']}>{category[currentLocale]}</Link>
+              <Link href={`/${currentLocale}/${category.name}`} className={styles['main-navigation__link']}>{category[currentLocale]}</Link>
             </li>
           )
         })}

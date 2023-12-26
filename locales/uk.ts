@@ -1,4 +1,5 @@
 export default {
   'helloWorld': "Привіт",
-  'tea': "український чай"
+  'tea': "український чай",
+  'coffee': "українська кава",
 } as const

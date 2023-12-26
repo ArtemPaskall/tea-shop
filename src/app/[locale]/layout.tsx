@@ -7,6 +7,7 @@ import Header from '@/Components/Header/page'
 import { I18nProviderClient } from '../../../locales/client'
 import { useI18n } from '../../../locales/client'
 const inter = Inter({ subsets: ['latin'] })
+import Footer from '@/Components/Footer/page'
 
 export const metadata: Metadata = {
   title: 'Головна',
