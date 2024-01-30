@@ -1,0 +1,30 @@
+.login-wrapper {
+  height: 100vh;
+  background-image: url('/64ec68827ae71.webp');
+  background-size: cover;
+  background-position: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(black, 0.3);
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 35%;
+  left: 50%;
+  width: 350px;
+  height: 300px;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(black, 0.3);
+  z-index: 100;
+}

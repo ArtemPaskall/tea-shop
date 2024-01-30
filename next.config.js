@@ -8,6 +8,6 @@ module.exports = {
         destination: '/uk/tea',
         permanent: false,
       },
-    ];
+    ]
   },
-};
+}
