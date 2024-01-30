@@ -1,5 +1,4 @@
 'use client'
-
 import MainNavigation from '../MainNavigation/page'
 import HeaderTopPanel from '../HeaderTopPanel/page'
 import Image from 'next/image'
