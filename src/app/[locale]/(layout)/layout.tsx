@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './styles/globals.scss'
-// import Header from '../../../components/Header/page'
+import Header from '@/components/Header/page'
 import { I18nProviderClient } from '../../../../locales/client'
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,7 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className={inter.className}>
         <I18nProviderClient>
-          {/* <Header /> */}
+          <Header />
           {children}
         </I18nProviderClient>
       </body>
