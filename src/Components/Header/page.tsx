@@ -2,7 +2,7 @@
 import MainNavigation from '../MainNavigation/page'
 import HeaderTopPanel from '../HeaderTopPanel/page'
 import Image from 'next/image'
-// import styles from './header.module.scss'
+import styles from './header.module.scss'
 import { useCurrentLocale } from '../../../locales/client'
 import Link from 'next/link'
 
