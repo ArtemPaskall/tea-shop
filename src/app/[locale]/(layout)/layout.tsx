@@ -4,7 +4,6 @@ import './styles/globals.scss'
 import Header from '../../../components/Header/page'
 import { I18nProviderClient } from '../../../../locales/client'
 const inter = Inter({ subsets: ['latin'] })
-// import Footer from '@/components/Footer/page'
 
 export const metadata: Metadata = {
   title: 'Головна',
