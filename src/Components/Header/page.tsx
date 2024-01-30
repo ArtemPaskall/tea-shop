@@ -7,7 +7,7 @@ import styles from './header.module.scss'
 import { useCurrentLocale } from '../../../locales/client'
 import Link from 'next/link'
 
-export default function Header() {
+function Header() {
   const currentLocale = useCurrentLocale()
 
   return (
@@ -43,3 +43,5 @@ export default function Header() {
     </header>
   )
 }
+
+export default Header
