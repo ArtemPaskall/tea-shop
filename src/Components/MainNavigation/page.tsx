@@ -30,7 +30,7 @@ export default function MainNavigation() {
           return (
             <li key={i} className={styles['main-navigation__li']}>
               <Link
-                href={`/${currentLocale}/main/${category.name}`}
+                href={`/${currentLocale}/${category.name}`}
                 className={styles['main-navigation__link']}
               >
                 {category[currentLocale]}
