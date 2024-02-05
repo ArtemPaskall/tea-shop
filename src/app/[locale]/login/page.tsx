@@ -9,6 +9,8 @@ export default function Login() {
     <div className={styles['login-wrapper']}>
       <div className={styles.modal}>
         <div>{t('login.title')}</div>
+        <input type="text" placeholder='email' />
+        <input type="password" placeholder='password' />
       </div>
     </div>
   )
